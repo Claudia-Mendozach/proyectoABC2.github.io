@@ -1,0 +1,372 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+main{
+    width: 83%;
+    margin: auto;
+    /* flex Padre */
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+#content{
+    font-family: 'Titillium Web',Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+/*HEADER*/
+
+header{
+    width: 100%;
+    background-color: #131c46;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    /* flex padre */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#logo img{
+    width: 100px;
+    vertical-align: middle;
+}
+
+#menu1{
+    width: 25%;
+    /* flex padre */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#menu1 a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-family: 'Titillium Web',Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    /* flex hijo */
+    flex-grow: 1;
+    flex-shrink: 1;
+
+}
+
+#menu1 a:hover{
+    background-color: #fc4b18;
+    color: black;
+}
+
+#menu2{
+    width: 25%;
+    /* flex padre */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#menu2 a{
+    text-decoration: none;
+   
+    font-weight: bold;
+    text-align: center;
+    /* flex hijo */
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#boton1{
+    color: white;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    font-family:'Titillium Web',Arial, Helvetica, sans-serif;
+}
+
+#boton2{
+    color:#131c46;
+    background-color: white;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    font-family:'Titillium Web',Arial, Helvetica, sans-serif;
+}
+
+
+/*BANNER*/
+.banner-image{
+    margin-top: 89px;
+    background-image: url(img/cuy\ banner\ modificado.jpg);
+    background-position: center center;
+    background-size: 1000px;
+}
+.banner-container{
+    color: white;
+    font-size: 23px;
+    font-family: 'Titillium Web',Arial, Helvetica, sans-serif;
+    height: 344px
+    
+}   
+
+.texto{
+    padding: 100px;
+}
+.texto p{
+    color: #131c46;
+
+}
+
+/*NUESTROS-BENEFICIOS*/
+
+.que-ofrecemos h2{
+    text-align: center;
+    color: #002A8D;
+    font-size: 35px;
+}
+
+.que-ofrecemos h3{
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: -.1px;
+    margin-bottom: 0;
+
+}
+
+.text-and-icons{
+    margin-top: 40px;   
+    display: flex;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 40px;
+    text-align: center;
+   
+}
+
+.que-ofrecemos{
+    padding: 100px 50px 50px 50px;
+    background-color:white;
+
+}
+
+#main-card{
+    padding: 10px;
+}
+
+.que-ofrecemos p{
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: .5px;
+}
+
+/*MAIN-TEXT*/
+.card-text-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-message{
+    padding: 40px 15px 40px 15px;
+    margin: 20px;
+    border-radius: 15px;
+    background: #ebeff6;
+}
+
+
+/*CURSOS-RECOMENDADOS*/
+.titulo-principal{
+    padding-left: 24px;
+    padding-bottom: 30px;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 0px;
+    font-style: normal;
+    color: #002A8D;
+    font-weight: bolder;
+}
+.cursos-recomendados{
+    background-color: white;
+    padding: 80px;
+    padding-top: 20px;
+}
+.second-card-section{
+    width: 100%;
+    display: flex;  
+    max-width: 1100px;
+}
+.second-card-section a{
+    text-decoration: none;
+    
+}
+.second-card-section h3{
+    color: #fc4b18;
+}
+
+.second-card-section p{
+    color: black;   
+}
+
+
+.secondary-card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: fff;
+    box-shadow: 0 1px 8px rgb(82 112 148 / 20%);
+    cursor: pointer;
+    transition: box-shadow .4s linear;
+    transition: all 600ms ease;
+}
+
+.card-content{
+    padding: 15px;
+}
+.secondary-card img{
+    width: 100%;
+    height: 210px;
+}
+
+.secondary-card:hover{
+ box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+ transform: translate(-3%);
+}
+
+
+/*
+/*FOOTER
+
+.secondary-footer-container{
+    background-color: white;
+    color: black;
+    display: flex;
+    border-top: 1px solid #cacaca;
+    padding: 25px 0;
+
+}
+
+.secondary-footer-container{
+    background-color: white;
+    color: black;
+    display: flex;
+    border-top: 1px solid #cacaca;
+    padding: 25px 70px 0px 70px;
+    
+
+}
+
+
+
+.secondary-footer-container a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: .5px;
+    margin-bottom: 5px;
+    margin-right: 25px;
+}
+
+.secondary-footer-container a:hover{
+    color: rgb(153, 152, 152);
+}
+
+.footer-container-end p{
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 13px;
+    letter-spacing: .25px;
+    color: #221f1f;
+    margin-bottom: 20px
+ 
+}
+
+.footer-space{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links{
+    margin-left: 800px;
+
+}
+
+.social-links i{
+font-size: 20px;
+} */
+
+/*footer*/
+
+footer{
+    width: 100%;
+    background-color:#131c46;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;}
+
+#menu4{
+        /*flex padre*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    padding: 10px;
+    font-family:'Titillium Web',Arial, Helvetica, sans-serif;
+    text-align: center;
+    /*flex hijo*/
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: left;
+}
+
+#menu4 li{
+    list-style-type: none;
+}
+
+#menu5{
+    
+    /*flex padre*/
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.foot2{
+    font-family:'Titillium Web',Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    display: flex;
+}
+
+div.foot3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+div.foot3 img{
+    width: 30px;
+}
